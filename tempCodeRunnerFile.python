@@ -1,0 +1,13 @@
+from datetime import datetime
+import pandas as pd
+today = datetime.now()
+daysTillSunday = 6-today.weekday()
+thisSunday = datetime(today.year, today.month, today.day+daysTillSunday)
+print(thisSunday)
+
+sr= pd.Series(["Mar 10", "Mar 11", "Mar 27"])
+sr =(pd.to_datetime(sr, format='%b %d'))
+sr= sr.apply(lambda x: x.replace(year=2026))
+sr=sr[sr<thisSunday]
+
+print(sr)

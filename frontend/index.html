@@ -2,37 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Streamer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="styles.css" rel="stylesheet" />
+    <title>my-project</title>
   </head>
-  <body
-    class="flex flex-1 text-center justify-center items-center flex-col gap-10 w-screen bg-black text-white"
-  >
-    <h1 class="">Index</h1>
-    <button
-      type="button"
-      class="bg-orange-500 rounded-lg p-1"
-      onclick="getFreeAgents()"
-    >
-      <p>Test get Free Agent</p>
-    </button>
-    <div class="w-3/4 flex flex-1">
-      <p id="freeAgents" class="break-words"></p>
-      <table>
-        <thead>
-          <tr>
-            <td>Player Name</td>
-            <td>MPG</td>
-            <td>Injury Status</td>
-            <td>Team</td>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
-  <script src="index.js"></script>
 </html>

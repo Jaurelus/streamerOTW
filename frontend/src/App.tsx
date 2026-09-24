@@ -17,7 +17,7 @@ function App() {
             <p>Name</p>
             <p>NBA Team</p>
             <p>Avg PPG</p>
-            <p>Avg RBG</p>
+            <p>Avg RPG</p>
             <p>Avg APG</p>
             <p>Avg SPG</p>
             <p>Avg BPG</p>

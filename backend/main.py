@@ -4,6 +4,7 @@ from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 import os
 from routers import faRoutes
+from routers import oppsRoutes
 
 
 app = FastAPI()
@@ -31,6 +32,7 @@ app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(__file__
 
 #Routes
 app.include_router(faRoutes.router, prefix="/streamers", tags=["streamers"])
+app.include_router(oppsRoutes.router, prefix="/league", tags=["league", "opponents", "rosters"])
 
 
 #@app.get("/")

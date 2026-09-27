@@ -9,12 +9,6 @@ from league import league
 from datetime import datetime
 
 
-
-
-print("\n\n-------------New run!!----------------\n\n")
-
-
-
 def getAll():
     return league.free_agents()
 
@@ -113,7 +107,7 @@ def getInjuredFAReturn():
     df = pd.DataFrame(iFAData, index=iFAIndex, columns=["Return Date", "Notes"])
     return df.to_dict(orient="index")
 t= getInjuredFAReturn()
-#print(t)
+#   print(t)
 """
 if minutes!=None:
     if

@@ -11,6 +11,8 @@ s2 = os.getenv("ESPNS2")
 swid = os.getenv("SWID")
 
 league = League(year=year, league_id=lid, espn_s2=s2, swid=swid)
+pastLeague = League(year=year-2, league_id=lid, espn_s2=s2, swid=swid)
+
 
 
 
